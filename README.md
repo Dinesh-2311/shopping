@@ -72,7 +72,7 @@ The `main` function handles the entire process of data loading, model training, 
 
 ## Notes
 - Update the `FILENAME` variable with the correct path to your `shopping.csv` file.
-- Adjust KNN_neighbors` in the `KNeighborsClassifier` if needed to improve performance.
+- Adjust n_neighbors` in the `KNeighborsClassifier` if needed to improve performance.
 - Ensure the dataset is properly formatted for successful loading and processing.
 
 ## Troubleshooting
