@@ -4,7 +4,7 @@
 This project uses a k-Nearest Neighbors (k-NN) classifier to predict whether a user will make a purchase on an online shopping platform. The dataset is processed to extract features and target variables, and the model is evaluated based on its sensitivity and specificity.
 
 ## File Structure
-- **shopping_knn.py**: Main Python script containing the data processing, model training, evaluation, and visualization.
+- **shopping.ipynb**: Main Python script containing the data processing, model training, evaluation, and visualization.
 - **shopping.csv**: The dataset used for training and testing the model.
 - **README.md**: Documentation for the project (this file).
 
@@ -17,13 +17,11 @@ This project uses a k-Nearest Neighbors (k-NN) classifier to predict whether a u
   - matplotlib
   - seaborn
 
-Install the required libraries using the following command:
-
-pip install pandas numpy scikit-learn matplotlib seaborn
+Install the required libraries using the following command: pip install pandas numpy scikit-learn matplotlib seaborn
 
 
 ## Dataset
-The dataset (`shopping.csv`) contains the following features:
+The dataset (shopping.csv) contains the following features:
 - **Administrative, Administrative_Duration**: Number and time spent on administrative pages.
 - **Informational, Informational_Duration**: Number and time spent on informational pages.
 - **ProductRelated, ProductRelated_Duration**: Number and time spent on product-related pages.
@@ -54,17 +52,15 @@ The dataset (`shopping.csv`) contains the following features:
 
 ## Code
 ### Running the Main Script
-The `main` function handles the entire process of data loading, model training, evaluation, and visualization. Run the script using:
-
-python shopping_knn.py
+The `main` function handles the entire process of data loading, model training, evaluation, and visualization. Run the script using: shopping.ipynb
 
 
 ### Functions
-- `load_data(filename)`: Reads the CSV file and converts the data into numerical format.
-- `train_model(evidence, labels)`: Trains a k-NN classifier on the given data.
-- `evaluate(labels, predictions)`: Calculates sensitivity and specificity.
-- `plot_confusion_matrix(y_test, predictions)`: Visualizes the confusion matrix using Seaborn.
-- `test_shopping()`: Tests the main functions for correctness.
+- load_data(filename)`: Reads the CSV file and converts the data into numerical format.
+- train_model(evidence, labels)`: Trains a k-NN classifier on the given data.
+- evaluate(labels, predictions)`: Calculates sensitivity and specificity.
+- plot_confusion_matrix(y_test, predictions)`: Visualizes the confusion matrix using Seaborn.
+- test_shopping()`: Tests the main functions for correctness.
 
 ## Output
 **Metrics**:
@@ -72,12 +68,11 @@ python shopping_knn.py
   - Specificity (True Negative Rate): Indicates the model's ability to correctly identify negative cases (no purchases).
 
   **Confusion Matrix**: Provides a detailed view of true positives, true negatives, false positives, and false negatives.
-
-A confusion matrix is also displayed graphically.
+    A confusion matrix is also displayed graphically.
 
 ## Notes
 - Update the `FILENAME` variable with the correct path to your `shopping.csv` file.
-- Adjust `n_neighbors` in the `KNeighborsClassifier` if needed to improve performance.
+- Adjust KNN_neighbors` in the `KNeighborsClassifier` if needed to improve performance.
 - Ensure the dataset is properly formatted for successful loading and processing.
 
 ## Troubleshooting
